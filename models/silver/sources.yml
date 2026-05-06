@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: AENA_DWH
+    schema: BRONZE
+    tables:
+      - name: RAW_AENA_MERCANCIAS
+      - name: RAW_AENA_OPERACIONES
+      - name: RAW_AENA_PASAJEROS
+      - name: RAW_AENA_RED_AGRUPADA
+      - name: RAW_AEROLINEAS
+      - name: RAW_AEROPUERTOS
+      - name: RAW_RUTAS
+      - name: RAW_VUELOS
