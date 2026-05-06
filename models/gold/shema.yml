@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: mart_trafico_aeropuertos
+    description: "Mart de tráfico de pasajeros y operaciones por aeropuerto"
+    columns:
+      - name: iata_code
+        tests:
+          - not_null
+      - name: mes_anio
+        tests:
+          - not_null
+      - name: tipo_trafico
+        tests:
+          - not_null
+      - name: total_pasajeros
+        tests:
+          - not_null
+
+  - name: mart_puntualidad
+    description: "Mart de puntualidad de vuelos por aerolínea y ruta"
+    columns:
+      - name: vuelo_id
+        tests:
+          - not_null
+          - unique
+      - name: fecha_vuelo
+        tests:
+          - not_null
+      - name: codigo_aerolinea
+        tests:
+          - not_null
+      - name: categoria_retraso
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['A tiempo', 'Retraso leve', 'Retraso moderado', 'Retraso grave']
