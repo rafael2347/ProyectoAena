@@ -18,7 +18,8 @@ SELECT
     MES_ANIO::TEXT                          AS mes_anio,
     TIEMPO_VUELO_ESTIMADO_MIN::INT          AS tiempo_vuelo_estimado_min,
     TARIFA_MEDIA_EUR::FLOAT                 AS tarifa_media_eur,
-    NUM_COMPETIDORES::INT                   AS num_competidores
+    NUM_COMPETIDORES::INT                   AS num_competidores,
+    CURRENT_TIMESTAMP::TIMESTAMP_LTZ        AS _inserted_at
 FROM {{ source('bronze', 'RAW_RUTAS') }}
 {% if is_incremental() %}
     WHERE MES_ANIO NOT IN (SELECT DISTINCT MES_ANIO FROM {{ this }})

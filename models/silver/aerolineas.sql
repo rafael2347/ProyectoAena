@@ -17,5 +17,6 @@ SELECT
     DESTINOS_DESDE_ESPANIA::INT             AS destinos_desde_espania,
     RATING_PUNTUALIDAD_2025::FLOAT          AS rating_puntualidad_2025,
     INGRESOS_ANUALES_MUSD::FLOAT            AS ingresos_anuales_musd,
-    EMPLEADOS_ESTIMADOS::INT                AS empleados_estimados
+    EMPLEADOS_ESTIMADOS::INT                AS empleados_estimados,
+    CURRENT_TIMESTAMP::TIMESTAMP_LTZ        AS _inserted_at
 FROM {{ source('bronze', 'RAW_AEROLINEAS') }}

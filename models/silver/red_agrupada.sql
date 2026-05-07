@@ -17,7 +17,8 @@ SELECT
     MES_ANIO::TEXT                      AS mes_anio,
     PCT_PAX_SOBRE_RED::FLOAT            AS pct_pax_sobre_red,
     PCT_OPS_SOBRE_RED::FLOAT            AS pct_ops_sobre_red,
-    PCT_MERC_SOBRE_RED::FLOAT           AS pct_merc_sobre_red
+    PCT_MERC_SOBRE_RED::FLOAT           AS pct_merc_sobre_red,
+    CURRENT_TIMESTAMP::TIMESTAMP_LTZ    AS _inserted_at
 FROM {{ source('bronze', 'RAW_AENA_RED_AGRUPADA') }}
 {% if is_incremental() %}
     WHERE MES_ANIO NOT IN (SELECT DISTINCT MES_ANIO FROM {{ this }})

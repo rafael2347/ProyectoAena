@@ -21,5 +21,6 @@ SELECT
     NUMERO_TERMINALES::INT                  AS numero_terminales,
     TIENE_ADUANA::BOOLEAN                   AS tiene_aduana,
     TIENE_CARGO::BOOLEAN                    AS tiene_cargo,
-    ANIO_APERTURA::INT                      AS anio_apertura
+    ANIO_APERTURA::INT                      AS anio_apertura,
+    CURRENT_TIMESTAMP::TIMESTAMP_LTZ        AS _inserted_at
 FROM {{ source('bronze', 'RAW_AEROPUERTOS') }}

@@ -23,4 +23,7 @@ models:
       +materialized: incremental
     gold:
       +schema: GOLD
-      +materialized: incremental
+      dims:
+        +materialized: table
+      facts:
+        +materialized: incremental

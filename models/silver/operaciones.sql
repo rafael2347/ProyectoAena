@@ -15,7 +15,8 @@ SELECT
     OPS_ANIO_ANTERIOR::BIGINT               AS ops_anio_anterior,
     PCT_SOBRE_RED::FLOAT                    AS pct_sobre_red,
     PROMEDIO_DIARIO_OPS::FLOAT              AS promedio_diario_ops,
-    OCUPACION_ESTIMADA_PAX_OP::FLOAT        AS ocupacion_estimada_pax_op
+    OCUPACION_ESTIMADA_PAX_OP::FLOAT        AS ocupacion_estimada_pax_op,
+    CURRENT_TIMESTAMP::TIMESTAMP_LTZ        AS _inserted_at
 FROM {{ source('bronze', 'RAW_AENA_OPERACIONES') }}
 {% if is_incremental() %}
     WHERE MES_ANIO NOT IN (SELECT DISTINCT MES_ANIO FROM {{ this }})
