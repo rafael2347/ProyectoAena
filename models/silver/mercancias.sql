@@ -15,7 +15,8 @@ SELECT
     TONELADAS_ANIO_ANTERIOR::FLOAT          AS toneladas_anio_anterior,
     CUOTA_RED_PCT::FLOAT                    AS cuota_red_pct,
     KG_POR_OPERACION_ESTIMADO::FLOAT        AS kg_por_operacion_estimado,
-    UPPER(TRIM(TIPO_CARGA))                 AS tipo_carga
+    UPPER(TRIM(TIPO_CARGA))                 AS tipo_carga,
+    CURRENT_TIMESTAMP::TIMESTAMP_LTZ        AS _inserted_at
 FROM {{ source('bronze', 'RAW_AENA_MERCANCIAS') }}
 {% if is_incremental() %}
     WHERE MES_ANIO NOT IN (SELECT DISTINCT MES_ANIO FROM {{ this }})

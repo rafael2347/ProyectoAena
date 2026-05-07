@@ -1,26 +1,118 @@
 version: 2
 
 models:
-  - name: mart_trafico_aeropuertos
-    description: "Mart de tráfico de pasajeros y operaciones por aeropuerto"
+  - name: dim_aeropuerto
+    description: "Dimensión de aeropuertos con datos geográficos y operativos"
+    columns:
+      - name: aeropuerto_sk
+        description: "Surrogate key generada por dbt_utils"
+        tests:
+          - not_null
+          - unique
+      - name: iata_code
+        description: "Código IATA del aeropuerto"
+        tests:
+          - not_null
+      - name: nombre
+        description: "Nombre oficial del aeropuerto"
+        tests:
+          - not_null
+
+  - name: dim_aerolinea
+    description: "Dimensión de aerolíneas con datos operativos y financieros"
+    columns:
+      - name: aerolinea_sk
+        description: "Surrogate key generada por dbt_utils"
+        tests:
+          - not_null
+          - unique
+      - name: codigo_iata
+        description: "Código IATA de la aerolínea"
+        tests:
+          - not_null
+      - name: nombre_comercial
+        description: "Nombre comercial de la aerolínea"
+        tests:
+          - not_null
+
+  - name: dim_tiempo
+    description: "Dimensión de tiempo con año, mes, trimestre y temporada"
+    columns:
+      - name: tiempo_sk
+        description: "Surrogate key generada por dbt_utils"
+        tests:
+          - not_null
+          - unique
+      - name: fecha
+        description: "Fecha completa"
+        tests:
+          - not_null
+      - name: anio
+        description: "Año"
+        tests:
+          - not_null
+      - name: mes
+        description: "Mes numérico"
+        tests:
+          - not_null
+      - name: trimestre
+        description: "Trimestre del año"
+      - name: nombre_mes
+        description: "Nombre del mes"
+      - name: es_temporada_alta
+        description: "TRUE si es junio, julio o agosto"
+
+  - name: dim_ruta
+    description: "Dimensión de rutas entre pares de aeropuertos"
+    columns:
+      - name: ruta_sk
+        description: "Surrogate key generada por dbt_utils"
+        tests:
+          - not_null
+          - unique
+      - name: ruta_id
+        description: "Identificador natural de la ruta"
+        tests:
+          - not_null
+      - name: aeropuerto_origen
+        description: "Código IATA del aeropuerto de origen"
+        tests:
+          - not_null
+      - name: aeropuerto_destino
+        description: "Código IATA del aeropuerto de destino"
+        tests:
+          - not_null
+      - name: categoria_distancia
+        description: "Corto, Medio o Largo según distancia en km"
+
+  - name: fact_trafico
+    description: "Fact table de tráfico de pasajeros y operaciones por aeropuerto y mes"
     columns:
       - name: iata_code
         description: "Código IATA del aeropuerto"
       - name: mes_anio
-        description: "Mes y año del tráfico"
+        description: "Periodo en formato MM-YYYY"
         tests:
           - not_null
       - name: tipo_trafico
-        description: "Tipo de tráfico (nacional, internacional, etc.)"
+        description: "Tipo de tráfico: nacional, internacional, tránsito"
         tests:
           - not_null
       - name: total_pasajeros
         description: "Total de pasajeros en el periodo"
         tests:
           - not_null
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+                max_value: 100000000
+      - name: total_operaciones
+        description: "Total de operaciones en el periodo"
+      - name: pasajeros_por_operacion
+        description: "Métrica derivada de eficiencia"
 
-  - name: mart_puntualidad
-    description: "Mart de puntualidad de vuelos por aerolínea y ruta"
+  - name: fact_vuelo
+    description: "Fact table de vuelos individuales con puntualidad y ocupación"
     columns:
       - name: vuelo_id
         description: "Identificador único del vuelo"
@@ -28,17 +120,23 @@ models:
           - not_null
           - unique
       - name: fecha_vuelo
-        description: "Fecha del vuelo"
+        description: "Fecha de operación del vuelo"
         tests:
           - not_null
       - name: codigo_aerolinea
-        description: "Código de la aerolínea"
+        description: "Código IATA de la aerolínea"
         tests:
           - not_null
+      - name: es_puntual
+        description: "TRUE si el retraso de llegada es menor o igual a 15 minutos"
       - name: categoria_retraso
-        description: "Clasificación del retraso del vuelo"
+        description: "A tiempo, Retraso leve, Retraso moderado o Retraso grave"
         tests:
           - not_null
           - accepted_values:
               arguments:
                 values: ['A tiempo', 'Retraso leve', 'Retraso moderado', 'Retraso grave']
+      - name: load_factor
+        description: "Factor de ocupación del vuelo"
+      - name: retraso_llegada_min
+        description: "Minutos de retraso en la llegada"

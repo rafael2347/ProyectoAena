@@ -2,10 +2,10 @@ version: 2
 
 models:
   - name: pasajeros
-    description: "Pasajeros por aeropuerto, mes y tipo de tráfico"
+    description: "Pasajeros por aeropuerto, mes y tipo de tráfico. Fuente: AENA datos abiertos."
     columns:
       - name: iata_code
-        description: "Código IATA del aeropuerto"
+        description: "Código IATA del aeropuerto. Puede ser nulo en helipuertos y aeródromos menores."
       - name: mes_anio
         tests:
           - not_null
@@ -15,33 +15,45 @@ models:
       - name: total_pasajeros
         tests:
           - not_null
+      - name: _inserted_at
+        description: "Fecha y hora de inserción del registro en Silver."
+        tests:
+          - not_null
 
   - name: operaciones
-    description: "Operaciones por aeropuerto y mes"
+    description: "Operaciones por aeropuerto y mes."
     columns:
       - name: iata_code
-        description: "Código IATA del aeropuerto"
+        description: "Código IATA del aeropuerto."
       - name: mes_anio
         tests:
           - not_null
       - name: total_operaciones
         tests:
           - not_null
+      - name: _inserted_at
+        description: "Fecha y hora de inserción del registro en Silver."
+        tests:
+          - not_null
 
   - name: mercancias
-    description: "Mercancías por aeropuerto, mes y tipo de carga"
+    description: "Mercancías por aeropuerto, mes y tipo de carga."
     columns:
       - name: iata_code
-        description: "Código IATA del aeropuerto"
+        description: "Código IATA del aeropuerto."
       - name: mes_anio
         tests:
           - not_null
       - name: tipo_carga
         tests:
           - not_null
+      - name: _inserted_at
+        description: "Fecha y hora de inserción del registro en Silver."
+        tests:
+          - not_null
 
   - name: vuelos
-    description: "Vuelos con puntualidad y ocupación"
+    description: "Vuelos con puntualidad y ocupación."
     columns:
       - name: vuelo_id
         tests:
@@ -56,9 +68,13 @@ models:
       - name: estado_vuelo
         tests:
           - not_null
+      - name: _inserted_at
+        description: "Fecha y hora de inserción del registro en Silver."
+        tests:
+          - not_null
 
   - name: aeropuertos
-    description: "Catálogo de aeropuertos"
+    description: "Catálogo de aeropuertos."
     columns:
       - name: iata_code
         tests:
@@ -67,9 +83,13 @@ models:
       - name: nombre
         tests:
           - not_null
+      - name: _inserted_at
+        description: "Fecha y hora de inserción del registro en Silver."
+        tests:
+          - not_null
 
   - name: aerolineas
-    description: "Catálogo de aerolíneas"
+    description: "Catálogo de aerolíneas."
     columns:
       - name: codigo_iata
         tests:
@@ -78,9 +98,13 @@ models:
       - name: nombre_comercial
         tests:
           - not_null
+      - name: _inserted_at
+        description: "Fecha y hora de inserción del registro en Silver."
+        tests:
+          - not_null
 
   - name: rutas
-    description: "Rutas entre aeropuertos"
+    description: "Rutas entre aeropuertos."
     columns:
       - name: ruta_id
         tests:
@@ -89,5 +113,9 @@ models:
         tests:
           - not_null
       - name: aeropuerto_destino
+        tests:
+          - not_null
+      - name: _inserted_at
+        description: "Fecha y hora de inserción del registro en Silver."
         tests:
           - not_null
