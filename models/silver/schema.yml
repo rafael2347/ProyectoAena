@@ -5,7 +5,7 @@ models:
     description: "Pasajeros por aeropuerto, mes y tipo de tráfico. Fuente: AENA datos abiertos."
     columns:
       - name: iata_code
-        description: "Código IATA del aeropuerto. Puede ser nulo en helipuertos y aeródromos menores."
+        description: "Código IATA del aeropuertos. Puede ser nulo en helipuertos y aeródromos menores."
       - name: mes_anio
         tests:
           - not_null
@@ -15,7 +15,7 @@ models:
       - name: total_pasajeros
         tests:
           - not_null
-      - name: _inserted_at
+      - name: datos_insertados
         description: "Fecha y hora de inserción del registro en Silver."
         tests:
           - not_null
@@ -31,7 +31,7 @@ models:
       - name: total_operaciones
         tests:
           - not_null
-      - name: _inserted_at
+      - name: datos_insertados
         description: "Fecha y hora de inserción del registro en Silver."
         tests:
           - not_null
@@ -47,7 +47,7 @@ models:
       - name: tipo_carga
         tests:
           - not_null
-      - name: _inserted_at
+      - name: datos_insertados
         description: "Fecha y hora de inserción del registro en Silver."
         tests:
           - not_null
@@ -68,7 +68,7 @@ models:
       - name: estado_vuelo
         tests:
           - not_null
-      - name: _inserted_at
+      - name: datos_insertados
         description: "Fecha y hora de inserción del registro en Silver."
         tests:
           - not_null
@@ -83,10 +83,6 @@ models:
       - name: nombre
         tests:
           - not_null
-      - name: _inserted_at
-        description: "Fecha y hora de inserción del registro en Silver."
-        tests:
-          - not_null
 
   - name: aerolineas
     description: "Catálogo de aerolíneas."
@@ -96,10 +92,6 @@ models:
           - not_null
           - unique
       - name: nombre_comercial
-        tests:
-          - not_null
-      - name: _inserted_at
-        description: "Fecha y hora de inserción del registro en Silver."
         tests:
           - not_null
 
@@ -113,9 +105,5 @@ models:
         tests:
           - not_null
       - name: aeropuerto_destino
-        tests:
-          - not_null
-      - name: _inserted_at
-        description: "Fecha y hora de inserción del registro en Silver."
         tests:
           - not_null

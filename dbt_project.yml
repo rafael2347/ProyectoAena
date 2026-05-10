@@ -18,10 +18,10 @@ clean-targets:
 
 models:
   aena_dwh:
-    silver:
+    silver: # en vez de llamarlo staying lo he llamado silver
       +schema: SILVER
       +materialized: incremental
-    gold:
+    gold: # en vez de llamarlo marts lo he llamado gold
       +schema: GOLD
       dims:
         +materialized: table
