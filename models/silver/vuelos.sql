@@ -20,7 +20,8 @@ SELECT
     HORA_SALIDA_PROGRAMADA::TIME            AS hora_salida_programada,
     TIPO_OPERACION::INT                     AS tipo_operacion,
     DISTANCIA_KM::FLOAT                     AS distancia_km,
-    MES_ANIO::TEXT                          AS mes_anio
+    MES_ANIO::TEXT                          AS mes_anio,
+    CURRENT_TIMESTAMP::TIMESTAMP_LTZ        AS datos_insertados
 FROM {{ source('bronze', 'RAW_VUELOS') }}
 {% if is_incremental() %}
     WHERE FECHA_VUELO > (SELECT MAX(fecha_vuelo) FROM {{ this }})

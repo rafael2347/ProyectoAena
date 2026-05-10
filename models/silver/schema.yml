@@ -5,7 +5,7 @@ models:
     description: "Pasajeros por aeropuerto, mes y tipo de tráfico. Fuente: AENA datos abiertos."
     columns:
       - name: iata_code
-        description: "Código IATA del aeropuerto. Puede ser nulo en helipuertos y aeródromos menores."
+        description: "Código IATA del aeropuertos. Puede ser nulo en helipuertos y aeródromos menores."
       - name: mes_anio
         tests:
           - not_null
@@ -68,7 +68,10 @@ models:
       - name: estado_vuelo
         tests:
           - not_null
-     
+      - name: datos_insertados
+        description: "Fecha y hora de inserción del registro en Silver."
+        tests:
+          - not_null
 
   - name: aeropuertos
     description: "Catálogo de aeropuertos."
@@ -80,7 +83,7 @@ models:
       - name: nombre
         tests:
           - not_null
-      
+
   - name: aerolineas
     description: "Catálogo de aerolíneas."
     columns:
@@ -91,7 +94,6 @@ models:
       - name: nombre_comercial
         tests:
           - not_null
-     
 
   - name: rutas
     description: "Rutas entre aeropuertos."
@@ -103,9 +105,5 @@ models:
         tests:
           - not_null
       - name: aeropuerto_destino
-        tests:
-          - not_null
-      - name: datos_insertados
-        description: "Fecha y hora de inserción del registro en Silver."
         tests:
           - not_null
