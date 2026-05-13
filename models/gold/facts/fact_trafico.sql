@@ -6,11 +6,9 @@
 ) }}
 
 SELECT
-    -- Surrogate keys para joins con dims
     {{ dbt_utils.generate_surrogate_key(['p.iata_code']) }} AS aeropuerto_sk,
     {{ dbt_utils.generate_surrogate_key(['p.mes_anio']) }} AS tiempo_sk,
 
-    -- Claves naturales
     p.iata_code,
     p.mes_anio,
     p.tipo_trafico,
@@ -18,20 +16,19 @@ SELECT
     -- Métricas pasajeros
     p.total_pasajeros,
     p.pasajeros_anio_anterior,
-    p.variacion_pct AS variacion_pct_pasajeros,
+    p.variacion_pct_pasajeros,
     p.cuota_red_pct,
     p.ranking_pasajeros,
 
     -- Métricas operaciones
     o.total_operaciones,
     o.ops_anio_anterior,
-    o.variacion_pct AS variacion_pct_operaciones,
+    o.variacion_pct_operaciones,
     o.promedio_diario_ops,
     o.ocupacion_estimada_pax_op,
     o.pct_sobre_red,
     o.ranking_operaciones,
-
-    -- Métrica derivada
+    --redondea el resultado a dos decimas
     ROUND(p.total_pasajeros / NULLIF(o.total_operaciones, 0), 2) AS pasajeros_por_operacion
 
 FROM {{ ref('pasajeros') }} p
