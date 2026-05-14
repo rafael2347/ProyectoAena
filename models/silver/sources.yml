@@ -5,7 +5,6 @@ sources:
     database: AENA_DWH
     schema: BRONZE
     tables:
-      - name: RAW_AENA_MERCANCIAS
       - name: RAW_TRAFICO
       - name: RAW_AENA_RED_AGRUPADA
       - name: RAW_AEROLINEAS

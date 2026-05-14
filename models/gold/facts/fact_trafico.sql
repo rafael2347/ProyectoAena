@@ -28,13 +28,21 @@ SELECT
     o.ocupacion_estimada_pax_op,
     o.pct_sobre_red,
     o.ranking_operaciones,
-    --redondea el resultado a dos decimas
-    ROUND(p.total_pasajeros / NULLIF(o.total_operaciones, 0), 2) AS pasajeros_por_operacion
+    ROUND(p.total_pasajeros / NULLIF(o.total_operaciones, 0), 2) AS pasajeros_por_operacion,
+
+    -- Métricas mercancías
+    m.toneladas,
+    m.variacion_pct_mercancias,
+    m.ranking_mercancias,
+    m.kg_por_operacion_estimado
 
 FROM {{ ref('pasajeros') }} p
 LEFT JOIN {{ ref('operaciones') }} o
     ON p.iata_code = o.iata_code
     AND p.mes_anio = o.mes_anio
+LEFT JOIN {{ ref('mercancias') }} m
+    ON p.iata_code = m.iata_code
+    AND p.mes_anio = m.mes_anio
 
 {% if is_incremental() %}
     WHERE p.mes_anio NOT IN (SELECT DISTINCT mes_anio FROM {{ this }})

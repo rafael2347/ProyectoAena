@@ -6,10 +6,10 @@
     merge_update_columns = [
         'aeropuerto',
         'toneladas',
-        'variacion_pct',
+        'variacion_pct_mercancias',
         'ranking_mercancias',
         'toneladas_anio_anterior',
-        'cuota_red_pct',
+        'cuota_red_pct_mercancias',
         'kg_por_operacion_estimado'
     ]
 ) }} 
@@ -18,15 +18,15 @@ SELECT
     UPPER(TRIM(AEROPUERTO))                 AS aeropuerto,
     UPPER(TRIM(IATA_CODE))                  AS iata_code,
     TONELADAS::FLOAT                        AS toneladas,
-    VARIACION_PCT::FLOAT                    AS variacion_pct,
+    VARIACION_PCT_MERCANCIAS::FLOAT         AS variacion_pct_mercancias,
     MES_ANIO::TEXT                          AS mes_anio,
     RANKING_MERCANCIAS::INT                 AS ranking_mercancias,
     TONELADAS_ANIO_ANTERIOR::FLOAT          AS toneladas_anio_anterior,
-    CUOTA_RED_PCT::FLOAT                    AS cuota_red_pct,
+    CUOTA_RED_PCT_MERCANCIAS::FLOAT         AS cuota_red_pct_mercancias,
     KG_POR_OPERACION_ESTIMADO::FLOAT        AS kg_por_operacion_estimado,
     UPPER(TRIM(TIPO_CARGA))                 AS tipo_carga,
     CURRENT_TIMESTAMP::TIMESTAMP_LTZ        AS datos_insertados
-FROM {{ source('bronze', 'RAW_AENA_MERCANCIAS') }}
+FROM {{ source('bronze', 'RAW_TRAFICO') }}
 {% if is_incremental() %}
     WHERE MES_ANIO NOT IN (SELECT DISTINCT MES_ANIO FROM {{ this }})
 {% endif %}
