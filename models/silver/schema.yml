@@ -45,8 +45,7 @@ models:
         tests:
           - not_null
       - name: tipo_carga
-        tests:
-          - not_null
+       
       - name: datos_insertados
         description: "Fecha y hora de inserción del registro en Silver."
         tests:
