@@ -1,6 +1,3 @@
-Aquí tienes el README completo:
-
-
 # 🛫 Proyecto AENA
 
 
