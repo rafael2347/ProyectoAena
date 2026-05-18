@@ -21,20 +21,20 @@ SELECT
     p.ranking_pasajeros,
 
     -- Métricas operaciones
-    o.total_operaciones,
-    o.ops_anio_anterior,
-    o.variacion_pct_operaciones,
-    o.promedio_diario_ops,
-    o.ocupacion_estimada_pax_op,
-    o.pct_sobre_red,
-    o.ranking_operaciones,
-    ROUND(p.total_pasajeros / NULLIF(o.total_operaciones, 0), 2) AS pasajeros_por_operacion,
+    COALESCE(o.total_operaciones, 0)            AS total_operaciones,
+    COALESCE(o.ops_anio_anterior, 0)            AS ops_anio_anterior,
+    COALESCE(o.variacion_pct_operaciones, 0)    AS variacion_pct_operaciones,
+    COALESCE(o.promedio_diario_ops, 0)          AS promedio_diario_ops,
+    COALESCE(o.ocupacion_estimada_pax_op, 0)    AS ocupacion_estimada_pax_op,
+    COALESCE(o.pct_sobre_red, 0)                AS pct_sobre_red,
+    COALESCE(o.ranking_operaciones, 0)          AS ranking_operaciones,
+    ROUND(p.total_pasajeros / NULLIF(COALESCE(o.total_operaciones, 0), 0), 2) AS pasajeros_por_operacion,
 
     -- Métricas mercancías
-    m.toneladas,
-    m.variacion_pct_mercancias,
-    m.ranking_mercancias,
-    m.kg_por_operacion_estimado
+    COALESCE(m.toneladas, 0)                    AS toneladas,
+    COALESCE(m.variacion_pct_mercancias, 0)     AS variacion_pct_mercancias,
+    COALESCE(m.ranking_mercancias, 0)           AS ranking_mercancias,
+    COALESCE(m.kg_por_operacion_estimado, 0)    AS kg_por_operacion_estimado
 
 FROM {{ ref('pasajeros') }} p
 LEFT JOIN {{ ref('operaciones') }} o
