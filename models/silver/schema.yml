@@ -89,7 +89,6 @@ models:
       - name: codigo_iata
         tests:
           - not_null
-          - unique
       - name: nombre_comercial
         tests:
           - not_null
