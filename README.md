@@ -25,7 +25,7 @@ Bronze → Silver → Gold → Power BI **Modelo incremental**
 
 ```
 models/
-  silver/          # Limpieza y estandarización
+  silver/          # Limpieza, normalización y limpieza de datos
   gold/
     dims/          # Dimensiones: aeropuerto, aerolínea, ruta, tiempo
     facts/         # Hechos: tráfico, vuelos
@@ -97,4 +97,3 @@ Los modelos incluyen tests de calidad en `schema.yml`:
 - `unique` en surrogate keys
 - `accepted_values` en categorías
 - `dbt_utils.accepted_range` en métricas numéricas
-```
