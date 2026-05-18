@@ -5,7 +5,7 @@ models:
     description: "Dimensión de aeropuertos con datos geográficos y operativos"
     columns:
       - name: aeropuerto_sk
-        description: "Surrogate key generada por dbt_utils"
+        description: "Clave surrogada generada"
         tests:
           - not_null
           - unique
@@ -22,7 +22,7 @@ models:
     description: "Dimensión de aerolíneas con datos operativos y financieros"
     columns:
       - name: aerolinea_sk
-        description: "Surrogate key generada por dbt_utils"
+        description: "Clave surrogada generada"
         tests:
           - not_null
           - unique
@@ -39,7 +39,7 @@ models:
     description: "Dimensión de tiempo con año, mes, trimestre y temporada"
     columns:
       - name: tiempo_sk
-        description: "Surrogate key generada por dbt_utils"
+        description: "Clave surrogada generada"
         tests:
           - not_null
           - unique
@@ -66,7 +66,7 @@ models:
     description: "Dimensión de rutas entre pares de aeropuertos"
     columns:
       - name: ruta_sk
-        description: "Surrogate key generada por dbt_utils"
+        description: "Clave surrogada generada "
         tests:
           - not_null
           - unique
