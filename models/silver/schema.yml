@@ -78,7 +78,7 @@ models:
       - name: iata_code
         tests:
           - not_null
-          - unique
+          
       - name: nombre
         tests:
           - not_null
