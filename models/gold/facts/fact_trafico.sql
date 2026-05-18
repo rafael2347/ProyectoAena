@@ -28,7 +28,7 @@ SELECT
     COALESCE(o.ocupacion_estimada_pax_op, 0)    AS ocupacion_estimada_pax_op,
     COALESCE(o.pct_sobre_red, 0)                AS pct_sobre_red,
     COALESCE(o.ranking_operaciones, 0)          AS ranking_operaciones,
-    ROUND(p.total_pasajeros / NULLIF(COALESCE(o.total_operaciones, 0), 0), 2) AS pasajeros_por_operacion,
+    COALESCE(ROUND(p.total_pasajeros / NULLIF(COALESCE(o.total_operaciones, 0), 0), 2), 0) AS pasajeros_por_operacion,
 
     -- Métricas mercancías
     COALESCE(m.toneladas, 0)                    AS toneladas,
