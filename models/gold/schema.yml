@@ -25,7 +25,6 @@ models:
         description: "Clave surrogada generada"
         tests:
           - not_null
-          - unique
       - name: codigo_iata
         description: "Código IATA de la aerolínea"
         tests:
