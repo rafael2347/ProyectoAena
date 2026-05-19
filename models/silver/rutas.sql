@@ -3,6 +3,7 @@
     materialized = 'incremental',
     unique_key = ['ruta_id', 'mes_anio'],
     incremental_strategy = 'merge',
+    cluster_by = ['mes_anio'], 
     merge_update_columns = [
         'aeropuerto_origen',
         'aeropuerto_destino',

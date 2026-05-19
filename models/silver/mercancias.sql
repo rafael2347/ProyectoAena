@@ -3,6 +3,7 @@
     materialized = 'incremental',
     unique_key = ['iata_code', 'mes_anio', 'tipo_carga'],
     incremental_strategy = 'merge',
+    cluster_by = ['mes_anio'], 
     merge_update_columns = [
         'aeropuerto',
         'toneladas',
