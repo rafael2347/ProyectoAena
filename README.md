@@ -25,8 +25,8 @@ Bronze → Silver → Gold → Power BI **Modelo incremental**
 
 ```
 models/
-  silver/          # Limpieza, normalización y limpieza de datos
-  gold/
+  silver/          # Limpieza, normalización de datos, sería la carpeta staging
+  gold/            # Sería la carpeta marts
     dims/          # Dimensiones: aeropuerto, aerolínea, ruta, tiempo
     facts/         # Hechos: tráfico, vuelos
 snapshots/         # SCD Tipo 2: aeropuertos, aerolíneas, rutas (son las tablas que muy raro sería que cambiaran)
