@@ -2,7 +2,8 @@
     schema = 'SILVER',
     materialized = 'incremental',
     unique_key = 'vuelo_id',
-    incremental_strategy = 'merge'
+    incremental_strategy = 'merge',
+    cluster_by = ['mes_anio', 'fecha_vuelo']
 ) }}
 
 SELECT
