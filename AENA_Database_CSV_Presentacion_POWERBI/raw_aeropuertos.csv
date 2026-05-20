@@ -1,0 +1,74 @@
+airport_id,iata_code,icao_code,nombre,ciudad,pais,pais_iso,latitud,longitud,altitud_ft,zona_horaria,tipo_aeropuerto,red_operadora,_source,_ingestion_timestamp,capacidad_anual_estimada,numero_terminales,tiene_aduana,tiene_cargo,anio_apertura
+1,MAD,LEMD,Adolfo Suárez Madrid-Barajas,Madrid,Spain,ES,40.4719,-3.5626,609,Europe/Madrid,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,57846594,4,True,True,1978
+2,BCN,LEBL,Josep Tarradellas Barcelona-El Prat,Barcelona,Spain,ES,41.2971,2.0785,12,Europe/Madrid,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,36137815,4,True,True,1984
+3,AGP,LEMG,Málaga-Costa del Sol,Málaga,Spain,ES,36.6749,-4.4991,53,Europe/Madrid,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,58030319,3,True,True,1952
+4,PMI,LEPA,Palma de Mallorca,Palma,Spain,ES,39.5517,2.7388,27,Europe/Madrid,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,46115857,4,True,True,1970
+5,ALC,LEAL,Alicante-Elche Miguel Hernández,Alicante,Spain,ES,38.2822,-0.5582,43,Europe/Madrid,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,65435047,4,True,True,1960
+6,VLC,LEVC,Valencia,Valencia,Spain,ES,39.4893,-0.4816,69,Europe/Madrid,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,56276530,4,True,True,1951
+7,SVQ,LEZL,Sevilla,Sevilla,Spain,ES,37.418,-5.8931,34,Europe/Madrid,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,42262012,3,True,True,1965
+8,BIO,LEBB,Bilbao,Bilbao,Spain,ES,43.3011,-2.9106,42,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,14879741,1,True,True,1960
+9,TFN,GCXO,Tenerife Norte-Ciudad de La Laguna,Tenerife,Spain,ES,28.4827,-16.3415,2073,Atlantic/Canary,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,69643458,3,True,True,1958
+10,TFS,GCTS,Tenerife Sur,Tenerife,Spain,ES,28.0445,-16.5725,64,Atlantic/Canary,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,29391925,3,True,True,1984
+11,LPA,GCLP,Gran Canaria,Las Palmas,Spain,ES,27.9319,-15.3866,78,Atlantic/Canary,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,66258847,4,True,True,1980
+12,IBZ,LEIB,Ibiza,Ibiza,Spain,ES,38.8729,1.3731,24,Europe/Madrid,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,68597794,3,True,True,1971
+13,GRX,LEGR,Federico García Lorca Granada-Jaén,Granada,Spain,ES,37.1887,-3.7774,1860,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,4631596,1,True,True,1976
+14,SDR,LEXJ,Seve Ballesteros-Santander,Santander,Spain,ES,43.4272,-3.82,16,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,18803819,1,True,True,1955
+15,ZAZ,LEZG,Zaragoza,Zaragoza,Spain,ES,41.6662,-1.0416,863,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,13605119,1,True,True,1960
+16,VGO,LEVX,Vigo,Vigo,Spain,ES,42.2318,-8.6277,856,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,3801753,1,True,True,1964
+17,SCQ,LEST,Santiago de Compostela,Santiago,Spain,ES,42.8963,-8.4151,1213,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,5277791,1,True,True,1957
+18,OVD,LEAS,Asturias,Asturias,Spain,ES,43.5636,-6.0346,416,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,16666248,1,True,True,1965
+19,ACE,GCRR,Lanzarote-César Manrique,Lanzarote,Spain,ES,28.9455,-13.6052,46,Atlantic/Canary,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,35578920,3,True,True,1963
+20,FUE,GCFV,Fuerteventura,Fuerteventura,Spain,ES,28.4527,-13.8638,85,Atlantic/Canary,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,25101498,4,True,True,1947
+21,LCG,LECO,A Coruña,A Coruña,Spain,ES,43.3021,-8.3772,326,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,13428396,1,True,True,1976
+22,SPC,GCLA,La Palma,La Palma,Spain,ES,28.6265,-17.7556,1391,Atlantic/Canary,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,15311145,1,True,True,1952
+23,MAH,LEMH,Menorca,Menorca,Spain,ES,39.8626,4.2186,302,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,12951383,1,True,True,1977
+24,EAS,LESO,San Sebastián,San Sebastián,Spain,ES,43.3565,-1.7906,16,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,2994072,1,True,True,1974
+25,XRY,LEJR,Jerez de la Frontera,Jerez,Spain,ES,36.7446,-6.0601,93,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,11171333,1,True,True,1951
+26,LEI,LEAM,Almería,Almería,Spain,ES,36.8439,-2.3701,70,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,17117955,1,True,True,1983
+27,MJV,LEMI,Int. Región de Murcia,Murcia,Spain,ES,37.775,-0.8124,62,Europe/Madrid,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,52923840,4,True,True,1975
+28,VIT,LEVT,Vitoria,Vitoria,Spain,ES,42.8828,-2.7245,1683,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,9655054,1,True,True,1941
+29,GRO,LEGE,Girona-Costa Brava,Girona,Spain,ES,41.901,2.7605,468,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,13939042,1,True,True,1969
+30,PNA,LEPP,Pamplona,Pamplona,Spain,ES,42.77,-1.6463,1504,Europe/Madrid,small_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,1259804,1,False,False,1985
+31,MLN,GEML,Melilla,Melilla,Spain,ES,35.2799,-2.9563,156,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,14597239,1,True,True,1953
+32,GMZ,GCGM,La Gomera,La Gomera,Spain,ES,28.0296,-17.2146,2894,Atlantic/Canary,small_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,1005650,1,False,False,1968
+33,VDE,GCHI,El Hierro,El Hierro,Spain,ES,27.8148,-17.8871,103,Atlantic/Canary,small_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,489520,1,False,False,1958
+34,VLL,LEVD,Valladolid,Valladolid,Spain,ES,41.7061,-4.8519,2776,Europe/Madrid,medium_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,14753124,1,True,True,1984
+35,BJZ,LEBZ,Badajoz,Badajoz,Spain,ES,38.8913,-6.8213,609,Europe/Madrid,small_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,279713,1,False,False,1944
+36,RJL,LELO,Logroño,Logroño,Spain,ES,42.4602,-2.3224,1161,Europe/Madrid,small_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,1719352,1,False,False,1966
+37,LHR,EGLL,Heathrow,London,United Kingdom,GB,51.4775,-0.4614,83,Europe/London,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,61514609,4,True,True,1983
+38,CDG,LFPG,Charles de Gaulle,Paris,France,FR,49.0097,2.5478,392,Europe/Paris,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,39822581,4,True,True,1971
+39,AMS,EHAM,Amsterdam Schiphol,Amsterdam,Netherlands,NL,52.3086,4.7639,-11,Europe/Amsterdam,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,36538964,3,True,True,1948
+40,FRA,EDDF,Frankfurt,Frankfurt,Germany,DE,50.0379,8.5622,364,Europe/Berlin,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,67855903,3,True,True,1980
+41,MUC,EDDM,Munich,Munich,Germany,DE,48.3538,11.7861,1487,Europe/Berlin,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,24932950,3,True,True,1959
+42,FCO,LIRF,Leonardo da Vinci,Rome,Italy,IT,41.7999,12.2462,13,Europe/Rome,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,25505477,4,True,True,1955
+43,MXP,LIMC,Malpensa,Milan,Italy,IT,45.6306,8.7281,768,Europe/Rome,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,37983298,4,True,True,1956
+44,LIS,LPPT,Humberto Delgado,Lisbon,Portugal,PT,38.7813,-9.1359,374,Europe/Lisbon,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,30349593,4,True,True,1982
+45,DUB,EIDW,Dublin,Dublin,Ireland,IE,53.4213,-6.27,242,Europe/Dublin,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,45501367,4,True,True,1949
+46,BRU,EBBR,Brussels,Brussels,Belgium,BE,50.9014,4.4844,184,Europe/Brussels,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,67759845,4,True,True,1985
+47,VIE,LOWW,Vienna,Vienna,Austria,AT,48.1103,16.5697,600,Europe/Vienna,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,62540368,3,True,True,1967
+48,ZRH,LSZH,Zürich,Zürich,Switzerland,CH,47.4647,8.5492,1416,Europe/Zurich,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,30353346,4,True,True,1964
+49,CPH,EKCH,Kastrup,Copenhagen,Denmark,DK,55.618,12.656,17,Europe/Copenhagen,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,69637426,4,True,True,1944
+50,ARN,ESSA,Arlanda,Stockholm,Sweden,SE,59.6519,17.9186,137,Europe/Stockholm,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,46147088,3,True,True,1968
+51,ATH,LGAV,Eleftherios Venizelos,Athens,Greece,GR,37.9364,23.9445,308,Europe/Athens,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,41251916,4,True,True,1978
+52,IST,LTFM,Istanbul,Istanbul,Turkey,TR,41.2753,28.7519,325,Europe/Istanbul,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,44206182,3,True,True,1970
+53,JFK,KJFK,John F. Kennedy,New York,United States,US,40.6398,-73.7789,13,America/New_York,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,27150511,4,True,True,1977
+54,LAX,KLAX,Los Angeles,Los Angeles,United States,US,33.9425,-118.4081,125,America/Los_Angeles,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,26141832,3,True,True,1965
+55,MIA,KMIA,Miami,Miami,United States,US,25.7959,-80.287,9,America/New_York,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,20348645,3,True,True,1974
+56,GRU,SBGR,Guarulhos,São Paulo,Brazil,BR,-23.4356,-46.4731,2459,America/Sao_Paulo,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,40687478,4,True,True,1972
+57,EZE,SAEZ,Ministro Pistarini,Buenos Aires,Argentina,AR,-34.8222,-58.5358,67,America/Argentina/Buenos_Aires,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,49845718,3,True,True,1984
+58,BOG,SKBO,El Dorado,Bogotá,Colombia,CO,4.7016,-74.1469,8361,America/Bogota,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,44153654,4,True,True,1966
+59,MEX,MMMX,Benito Juárez,Ciudad de México,Mexico,MX,19.4363,-99.0721,7316,America/Mexico_City,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,38103719,4,True,True,1974
+60,CUN,MMUN,Cancún,Cancún,Mexico,MX,21.0365,-86.8771,22,America/Cancun,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,26860634,4,True,True,1942
+61,DXB,OMDB,Dubai,Dubai,UAE,AE,25.2528,55.3644,62,Asia/Dubai,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,28892394,4,True,True,1963
+62,DOH,OTHH,Hamad,Doha,Qatar,QA,25.2731,51.608,13,Asia/Qatar,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,25858418,4,True,True,1984
+63,NRT,RJAA,Narita,Tokyo,Japan,JP,35.7647,140.3864,141,Asia/Tokyo,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,32575649,4,True,True,1974
+64,SIN,WSSS,Changi,Singapore,Singapore,SG,1.3502,103.9942,22,Asia/Singapore,large_airport,OpenFlights,openflights_aena_catalogo,2026-01-31 23:59:00,48922545,4,True,True,1978
+65,LTN,EGGW,Londres-Luton,Luton,United Kingdom,GB,51.8747,-0.3683,526,Europe/London,large_airport,AENA,openflights_aena_catalogo,2026-01-31 23:59:00,50121389,3,True,True,1980
+66,CGH,SBSP,São Paulo/Congonhas,São Paulo,Brazil,BR,-23.6261,-46.6564,2631,America/Sao_Paulo,large_airport,AENA Brasil,openflights_aena_catalogo,2026-01-31 23:59:00,57378632,4,True,True,1945
+67,CGR,SBCG,Campo Grande,Campo Grande,Brazil,BR,-20.4688,-54.6725,1833,America/Campo_Grande,medium_airport,AENA Brasil,openflights_aena_catalogo,2026-01-31 23:59:00,19194661,1,True,True,1946
+68,UDI,SBUL,Uberlândia,Uberlândia,Brazil,BR,-18.8836,-48.2253,3094,America/Sao_Paulo,medium_airport,AENA Brasil,openflights_aena_catalogo,2026-01-31 23:59:00,15691690,1,True,True,1955
+69,STM,SBSN,Santarém,Santarém,Brazil,BR,-2.4247,-54.7858,198,America/Santarem,medium_airport,AENA Brasil,openflights_aena_catalogo,2026-01-31 23:59:00,5465935,1,True,True,1982
+70,REC,SBRF,Recife,Recife,Brazil,BR,-8.1265,-34.9237,33,America/Recife,large_airport,AENA Brasil,openflights_aena_catalogo,2026-01-31 23:59:00,21762406,4,True,True,1982
+71,MCZ,SBMO,Maceió,Maceió,Brazil,BR,-9.5108,-35.7917,387,America/Maceio,medium_airport,AENA Brasil,openflights_aena_catalogo,2026-01-31 23:59:00,5007109,1,True,True,1962
+72,JPA,SBJP,João Pessoa,João Pessoa,Brazil,BR,-7.1459,-34.9502,217,America/Fortaleza,medium_airport,AENA Brasil,openflights_aena_catalogo,2026-01-31 23:59:00,13875392,1,True,True,1950
+73,AJU,SBAR,Aracaju,Aracaju,Brazil,BR,-10.984,-37.0703,23,America/Maceio,medium_airport,AENA Brasil,openflights_aena_catalogo,2026-01-31 23:59:00,5122718,1,True,True,1981

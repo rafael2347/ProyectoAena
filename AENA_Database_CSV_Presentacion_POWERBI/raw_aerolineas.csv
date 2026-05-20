@@ -1,0 +1,41 @@
+codigo_iata,nombre_comercial,pais_origen,pais_iso,grupo_aereo,categoria,alianza,anio_fundacion,callsign,flota_estimada,destinos_desde_espania,rating_puntualidad_2025,ingresos_anuales_musd,empleados_estimados
+IBE,Iberia,Spain,ES,Star Alliance,FSC,Oneworld,1927,IBERIA,332,11,89.7,9115,65812
+VLG,Vueling,Spain,ES,IAG,LCC,Oneworld,2004,VUELING,62,45,70.2,33442,23616
+AEA,Air Europa,Spain,ES,Independiente,FSC,SkyTeam,1984,EUROPA,17,28,73.1,32393,66742
+IBB,Air Nostrum,Spain,ES,Independiente,Regional,Oneworld,1994,NOSTRUM,384,22,88.4,6007,14147
+IBS,Iberia Express,Spain,ES,IAG,LCC,Oneworld,2011,EXPRINTER,145,18,61.5,49580,39317
+IBK,Iberia Cargo,Spain,ES,IAG,Cargo,Oneworld,2004,IBERIALINE,130,10,69.2,3137,66740
+CNF,Canary Fly,Spain,ES,Independiente,Regional,None,2010,CANARYFLY,119,14,81.8,7235,26271
+RYR,Ryanair,Ireland,IE,Independiente,ULCC,None,1985,RYANAIR,76,49,83.1,10066,20232
+EZY,easyJet,UK,GB,Independiente,LCC,None,1995,EASY,382,22,82.3,41170,49209
+DLH,Lufthansa,Germany,DE,Lufthansa Group,FSC,Star Alliance,1926,LUFTHANSA,57,7,57.9,10534,21374
+BAW,British Airways,UK,GB,IAG,FSC,Oneworld,1974,SPEEDBIRD,351,6,80.4,44646,70897
+AFR,Air France,France,FR,Air France-KLM,FSC,SkyTeam,1933,AIRFRANS,384,25,76.4,27716,69714
+KLM,KLM,Netherlands,NL,Air France-KLM,FSC,SkyTeam,1919,KLM,461,7,64.8,39136,274
+TAP,TAP Air Portugal,Portugal,PT,Independiente,FSC,Star Alliance,1945,TAP,284,23,73.5,4213,78704
+SWR,Swiss International,Switzerland,CH,Lufthansa Group,FSC,Star Alliance,2002,SWISS,49,23,65.8,25266,42687
+TUI,TUI Group,Germany,DE,TUI Group,Charter,None,2002,TUI,307,39,92.0,25059,64242
+LDM,Lauda,Austria,AT,Independiente,LCC,None,2018,LAUDA,221,17,82.5,39102,2752
+EXS,Jet2.com,UK,GB,Independiente,Charter,None,2002,EXCELJET,21,3,63.8,30724,14862
+TOM,TUI Airways,UK,GB,TUI Group,Charter,None,2004,TOM,20,47,68.0,34726,47776
+TRA,Transavia,France,FR,Air France-KLM,LCC,None,1966,TRANSAVIA,52,30,85.7,16526,40506
+AAL,American Airlines,USA,US,Independiente,FSC,Oneworld,1934,AMERICAN,116,35,57.2,36306,31585
+DAL,Delta Air Lines,USA,US,Independiente,FSC,SkyTeam,1929,DELTA,124,8,87.9,802,7792
+UAL,United Airlines,USA,US,Independiente,FSC,Star Alliance,1926,UNITED,263,25,87.2,44633,31771
+QTR,Qatar Airways,Qatar,QA,Independiente,FSC,Oneworld,1993,QATARI,313,6,71.0,47283,74564
+THY,Turkish Airlines,Turkey,TR,Independiente,FSC,Star Alliance,1933,TURKAIR,18,36,57.6,7557,10522
+EIN,Aer Lingus,Ireland,IE,IAG,FSC,Oneworld,1936,SHAMROCK,292,19,91.5,44726,11426
+FIN,Finnair,Finland,FI,Independiente,FSC,Oneworld,1923,FINNAIR,106,41,77.7,35240,63899
+BEL,Brussels Airlines,Belgium,BE,Lufthansa Group,FSC,Star Alliance,2007,BEELINE,371,40,83.7,49259,9271
+WZZ,Wizz Air,Hungary,HU,Independiente,ULCC,None,2004,WIZZAIR,337,24,63.5,17536,70022
+BMS,Small Planet,Germany,DE,Independiente,Charter,None,2009,MAPJET,364,37,75.0,42056,16683
+VOE,Volotea,Spain,ES,Independiente,LCC,None,2012,VOLOTEA,284,13,90.4,22343,17028
+NAX,Norwegian,Norway,NO,Independiente,LCC,None,1993,NOR,219,46,80.7,7360,62496
+SAS,SAS,Sweden,SE,Independiente,FSC,Star Alliance,1946,SCANDINAVIAN,117,5,60.7,19284,72263
+GMI,Global Aeronautics,Spain,ES,Independiente,Charter,None,2006,GLOBAL,234,3,60.6,28542,21843
+AFL,Aeroflot,Russia,RU,Independiente,FSC,SkyTeam,1923,AEROFLOT,306,43,84.8,10415,34941
+GTI,Atlas Air,USA,US,Independiente,Cargo,None,1992,GIANT,147,15,76.6,29785,69363
+AMX,Aeromexico,Mexico,MX,Independiente,FSC,SkyTeam,1934,AEROMEXICO,419,50,84.9,262,79707
+AVA,Avianca,Colombia,CO,Independiente,FSC,Star Alliance,1919,AVIANCA,450,19,72.1,47373,55661
+LAV,LATAM,Chile,CL,Independiente,FSC,Oneworld,2012,LATAM,8,6,78.3,47214,27960
+CPA,Cathay Pacific,Hong Kong,HK,Independiente,FSC,Oneworld,1946,CATHAY,393,15,69.5,17311,70886

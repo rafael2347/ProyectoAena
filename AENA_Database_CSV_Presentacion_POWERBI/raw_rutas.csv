@@ -1,0 +1,63 @@
+ruta_id,aeropuerto_origen,aeropuerto_destino,distancia_km,tipo_ruta,demanda,operadores_principales,frecuencia_semanal,activa,mes_anio,tiempo_vuelo_estimado_min,tarifa_media_eur,num_competidores
+RT0001,MAD,BCN,620,Doméstica,alta,"Iberia,Vueling,Air Europa,Iberia Express",9,True,2026-01,81,330.87,4
+RT0002,MAD,PMI,554,Doméstica,alta,"Iberia,Vueling,Air Europa",15,True,2026-01,76,447.99,3
+RT0003,MAD,SVQ,521,Doméstica,media,"Iberia,Vueling",6,True,2026-01,73,216.81,2
+RT0004,MAD,AGP,538,Doméstica,media,"Iberia,Vueling,Ryanair",9,True,2026-01,74,222.37,3
+RT0005,MAD,VLC,356,Doméstica,media,"Iberia,Vueling,Air Europa",4,True,2026-01,59,128.25,3
+RT0006,MAD,BIO,394,Doméstica,media,"Iberia,Vueling",6,True,2026-01,62,43.73,2
+RT0007,MAD,LPA,1875,Doméstica,alta,"Iberia,Vueling,Air Europa,Binter",20,True,2026-01,186,130.5,4
+RT0008,MAD,TFS,1949,Doméstica,alta,"Iberia,Vueling",10,True,2026-01,192,37.98,2
+RT0009,MAD,TFN,1879,Doméstica,media,"Iberia,Air Nostrum",1,True,2026-01,186,130.01,2
+RT0010,MAD,ACE,1888,Doméstica,media,"Iberia,Vueling",1,True,2026-01,187,391.75,2
+RT0011,MAD,FUE,1963,Doméstica,media,"Iberia,Vueling",2,True,2026-01,193,248.37,2
+RT0012,MAD,IBZ,739,Doméstica,media,"Iberia,Vueling",5,True,2026-01,91,312.63,2
+RT0013,MAD,OVD,439,Doméstica,media,"Iberia,Vueling,Air Nostrum",4,True,2026-01,66,258.78,3
+RT0014,MAD,SCQ,610,Doméstica,media,"Iberia,Vueling,Air Nostrum",10,True,2026-01,80,274.13,3
+RT0015,MAD,LCG,589,Doméstica,baja,"Iberia,Air Nostrum",2,True,2026-01,79,360.62,2
+RT0016,MAD,SPC,1876,Doméstica,baja,"Iberia,Binter",4,True,2026-01,186,114.02,2
+RT0017,MAD,GRX,428,Doméstica,baja,"Iberia,Vueling",1,True,2026-01,65,308.48,2
+RT0018,MAD,MAH,706,Doméstica,baja,"Iberia,Vueling",3,True,2026-01,88,210.79,2
+RT0019,MAD,ZAZ,299,Doméstica,baja,"Iberia,Vueling",4,True,2026-01,54,393.49,2
+RT0020,MAD,LEI,456,Doméstica,baja,Iberia,1,True,2026-01,68,314.45,1
+RT0021,BCN,PMI,187,Doméstica,media,"Vueling,Ryanair,easyJet",2,True,2026-01,45,60.15,3
+RT0022,BCN,SVQ,846,Doméstica,media,"Vueling,Ryanair",6,True,2026-01,100,367.25,2
+RT0023,BCN,AGP,880,Doméstica,media,"Vueling,Ryanair,easyJet",2,True,2026-01,103,138.19,3
+RT0024,BCN,VLC,303,Doméstica,media,"Vueling,Ryanair",4,True,2026-01,55,257.56,2
+RT0025,BCN,BIO,620,Doméstica,media,"Vueling,Ryanair",3,True,2026-01,81,210.08,2
+RT0026,BCN,LPA,1962,Doméstica,media,"Vueling,Ryanair",5,True,2026-01,193,226.99,2
+RT0027,BCN,TFS,2022,Doméstica,media,"Vueling,Ryanair",2,True,2026-01,198,218.9,2
+RT0028,BCN,IBZ,241,Doméstica,alta,"Vueling,Ryanair,easyJet",20,True,2026-01,50,75.63,3
+RT0029,MAD,LHR,1246,Internacional,alta,"Iberia,British Airways",20,True,2026-01,133,381.95,2
+RT0030,MAD,CDG,1053,Internacional,alta,"Iberia,Air France",5,True,2026-01,117,419.44,2
+RT0031,MAD,FRA,1858,Internacional,alta,"Iberia,Lufthansa",10,True,2026-01,184,104.02,2
+RT0032,MAD,AMS,1459,Internacional,alta,"Iberia,KLM",18,True,2026-01,151,234.76,2
+RT0033,MAD,ZRH,1782,Internacional,media,"Iberia,Swiss",7,True,2026-01,178,409.51,2
+RT0034,MAD,LIS,624,Internacional,alta,"Iberia,TAP",8,True,2026-01,82,192.27,2
+RT0035,MAD,DUB,1460,Internacional,media,"Iberia,Aer Lingus,Ryanair",7,True,2026-01,151,145.06,3
+RT0036,MAD,IST,2840,Internacional,media,"Iberia,Turkish",8,True,2026-01,266,153.38,2
+RT0037,MAD,DOH,5793,Internacional,baja,Qatar Airways,5,True,2026-01,512,309.68,1
+RT0038,MAD,GRU,9354,Internacional,media,"Iberia,Air Europa",8,True,2026-01,809,99.24,2
+RT0039,MAD,JFK,5769,Internacional,alta,"Iberia,American,Delta,United",12,True,2026-01,510,125.35,4
+RT0040,MAD,EWR,5740,Internacional,media,"Iberia,United",1,True,2026-01,508,275.36,2
+RT0041,MAD,BRU,1311,Internacional,media,"Iberia,Brussels",9,True,2026-01,139,60.3,2
+RT0042,MAD,VIE,1968,Internacional,baja,"Iberia,Austrian",3,True,2026-01,194,58.72,2
+RT0043,MAD,FCO,1363,Internacional,alta,"Iberia,Alitalia",21,True,2026-01,143,232.87,2
+RT0044,MAD,ORY,1066,Internacional,media,"Iberia,Transavia",9,True,2026-01,118,100.33,2
+RT0045,MAD,STN,1239,Internacional,alta,Ryanair,19,True,2026-01,133,68.25,1
+RT0046,MAD,LGW,1238,Internacional,media,easyJet,3,True,2026-01,133,63.44,1
+RT0047,BCN,LHR,1141,Internacional,alta,"Vueling,British Airways",5,True,2026-01,125,315.21,2
+RT0048,BCN,CDG,1037,Internacional,alta,"Vueling,Air France",10,True,2026-01,116,202.57,2
+RT0049,BCN,FRA,1490,Internacional,media,"Vueling,Lufthansa",10,True,2026-01,154,137.18,2
+RT0050,BCN,AMS,1471,Internacional,media,"Vueling,KLM",10,True,2026-01,152,51.49,2
+RT0051,BCN,DUB,1469,Internacional,media,"Vueling,Ryanair",2,True,2026-01,152,208.98,2
+RT0052,BCN,STN,1141,Internacional,alta,Ryanair,21,True,2026-01,125,269.57,1
+RT0053,BCN,LGW,1125,Internacional,media,"easyJet,Vueling",6,True,2026-01,123,422.9,2
+RT0054,AGP,LGW,1736,Internacional,alta,"easyJet,Jet2,TUI",9,True,2026-01,174,312.94,3
+RT0055,AGP,MAN,1823,Internacional,alta,"Jet2,TUI,Ryanair",13,True,2026-01,181,134.05,3
+RT0056,PMI,LGW,1330,Internacional,alta,"easyJet,Jet2,TUI",15,True,2026-01,140,89.31,3
+RT0057,PMI,STN,1431,Internacional,media,Ryanair,5,True,2026-01,149,224.75,1
+RT0058,TFS,LGW,2873,Internacional,alta,"easyJet,TUI,Ryanair",5,True,2026-01,269,38.87,3
+RT0059,TFS,MAN,2906,Internacional,alta,"Jet2,TUI",21,True,2026-01,272,448.38,2
+RT0060,ACE,LGW,2905,Internacional,alta,"easyJet,TUI,Ryanair",5,True,2026-01,272,258.12,3
+RT0061,FUE,LGW,2980,Internacional,media,"easyJet,Ryanair",9,True,2026-01,278,145.06,2
+RT0062,MAH,LGW,1428,Internacional,media,easyJet,6,True,2026-01,149,400.56,1
