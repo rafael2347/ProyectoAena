@@ -1,0 +1,7 @@
+agrupacion_id,descripcion,total_pasajeros,var_pax_pct,total_operaciones,var_ops_pct,toneladas_mercancias,var_merc_pct,mes_anio,pct_pax_sobre_red,pct_ops_sobre_red,pct_merc_sobre_red
+España,Aeropuertos Españoles,20315707,2.6,173431,-0.6,103493069,8.0,2026-01,78.65,78.41,89.31
+Brasil-BOAB,São Paulo/Congonhas y otros BOAB,2567964,5.9,23789,-2.9,4915604,8.3,2026-01,9.94,10.75,4.24
+Brasil-ANB,Recife y otros ANB,1773560,7.7,14769,1.7,6531765,18.5,2026-01,6.87,6.68,5.64
+Brasil-Total,Total Aeropuertos Brasileños,4341524,6.7,38558,-1.2,11447369,13.9,2026-01,16.81,17.43,9.88
+Luton,Londres-Luton (Reino Unido),1172928,4.0,9205,0.3,935192,-59.1,2026-01,4.54,4.16,0.81
+Red Total AENA,TOTAL RED AENA,25830159,3.3,221194,-0.7,115875630,7.1,2026-01,100.0,100.0,100.0
